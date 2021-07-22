@@ -1,0 +1,84 @@
+
+<!DOCTYPE HTML5>
+<html>
+    <title>
+        login
+    </title>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <link rel='icon' width href='img/title.png' >
+    <body id='body' class='body'>
+        
+        
+        <div id='special' class='special'>
+
+            <p class='content' style='font-size:20px'>
+                COVID ALERT!
+                <br>
+                <a href='https://selfregistration.cowin.gov.in/' target="_blank" style="text-decoration: none;color: darkgrey;font-size: 20px">Vacination</a>
+                <br>
+                <a href='https://www.pmcares.gov.in/en/web/contribution/donate_india' target="_blank" style="text-decoration: none;color: darkgray;font-size: 20px">Donation</a>
+            </p>
+            <button type='button' class='close' onclick='fun()' style='font-size: 15px;padding:3px;'>X</button>
+        </div>
+
+
+        <div id='bodyleft' class = 'bodyleft'>
+            <div class='loginblock'>
+                <div class='border'>
+					<form form name='loginform' id='loginform' method='POST' action='/register'>
+                    <div class = 'inputblock'>
+                        <div class='block'>
+                            <div class='lable1'>  Full name</div>
+                            <div class='inputbox' >
+                                <div class='input1'>
+									<input name='fullname' type='text' class='input0' placeholder="enter the fullname"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='block'>
+                            <div class='lable1'> Emailadress</div>
+                            <div class='inputbox' >
+                                <div class='input1'>
+									<input name='email' type='email' class='input0' placeholder="enter the email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='block'>
+                            <div class='lable1'>  Password</div>
+                            <div class='inputbox'>
+                                <div class='input1'>
+                                    <input name="password" type='password' class='input0' placeholder="enter the password" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class='loginregion'>
+                        <button type='submit' class='loginbutton'>
+                            register
+                        </button>
+                    </div>
+					<form>
+                </div>
+            </div>
+        </div>
+        <div class = 'bodyright'>
+            <div>
+            <img src='img/image.png' alt='umeshimage' >
+            </div>
+            <div class='para'>
+                <h1>Vision</h1>
+                <p>
+                    To be an institution that nurtures young adults with a balanced body, mind and spirit so that they  grow up into individuals who are optimistic, happy and become leaders of their own tomorrow
+                </p>
+                <h1>Mission</h1>
+                <p>
+                    To prepare students for life by fostering scientific temper and values – To enhance students’ self-esteem and ignite their curiosity and imagination – To realize students’ potential through multi-disciplinary curriculum and mould them as wholesome personalities
+                </p>
+            </div>
+        </div>
+                <script src='js.js'>
+        </script>      
+    </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "java.js",
+  "scripts": {
+    "watch": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.6",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.6.1",
+    "session-file-store": "^1.5.0",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "description": "User Authorization and Authentication (session based)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umesh-1440/authorization-and-authentication-using-sessions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umesh-1440/authorization-and-authentication-using-sessions/issues"
+  },
+  "homepage": "https://github.com/umesh-1440/authorization-and-authentication-using-sessions#readme"
+}
