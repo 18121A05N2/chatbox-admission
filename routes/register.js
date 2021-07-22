@@ -44,7 +44,7 @@ route.get('/verification',eligibleForOtp,(req,res,next)=>{
 route.post('/verification',(req,res,next)=>{
     sessionStore.get(req.session.id,(err,session)=>{
         if(req.body.otp==session.otp){
-            createUser(req,res,session,(err)=>{
+            createUser(req,res,session,'student',(err)=>{
                 if(err){
                     console.log(err)
                     res.send(err)

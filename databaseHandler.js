@@ -61,10 +61,10 @@ function userExists(req,res,callback){
     })
     db.end()
 }
-function createUser(req,res,session,callback){
+function createUser(req,res,session,user,callback){
     
     let db = createdb()
-    let sql = `insert into useraccount values ('${session.fullname}','${session.email}','${session.password}','default.png')`
+    let sql = `insert into useraccount values ('${session.fullname}','${session.email}','${session.password}','default.png',${user})`
     db.query(sql,[],(err,result)=>{
         callback(err)
     })
